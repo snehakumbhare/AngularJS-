@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body style="background-color:#8cdb9c;">
+<div ng-app="">
+	<table cellpadding="3px" align="center" 
+	style="border:2px solid red;padding:10px;border-radius:20px; background-color:rgb(231, 240, 128);">
+		<tr>
+			<th colspan="2" style="color:red ">Simple Interest Calculator</th>
+		</tr>
+		<tr>
+			<td style="color:indigo">Principle Amount</td>
+			<td><input type="text" ng-model="pa"></td>
+		</tr>
+		<tr>
+			<td style="color:rgb(229, 95, 12) ">Rate of Interest</td>
+			<td><input type="text" ng-model="rate"></td>
+		</tr>
+		<tr>
+			<td style="color:darkred ">Time</td>
+			<td><input type="text" ng-model="time"></td>
+		</tr>
+		<tr>
+			<td style="color:darkorange ">Simple Interest</td>
+			<td><h4 style="color:green ">{{((pa*rate*time)/100)}}</h4></td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
