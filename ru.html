@@ -1,0 +1,24 @@
+<!--AngularJS Program for Dollar to Indian Rupee Conversion-->
+<!doctype html>
+<html>
+	<head>
+		<title>Dollar to Indian Rupee Converter using Angular JS</title>
+		<script language="javascript" src="angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body style="background-color:#8cdbbb;">
+		<h1 style="color:red; font-size: 30px;">Dollar to Indian Rupee Converter using Angular JS</h1>
+		<div ng-app="">
+		<table>
+			<tr>
+				<td style="color:rgb(170, 0, 255); font-size: 20px;">United States Dollar: </td>
+				<td><input type="text" ng-model="dollar" value="1"></td>
+			</tr>
+			<tr>
+				<td style="color:rgb(204, 0, 255); font-size: 20px;">Indian Rupee:</td>
+				<td><input type="text" value="{{dollar*76.09}}"/></td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>
