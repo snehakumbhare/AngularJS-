@@ -1,0 +1,16 @@
+<!--Angular JS program to convert Temperature Fahrenheit to Degree Celsius-->
+<!doctype html>
+<html>
+	<head>
+		<!--<script language="javascript" src="angular.min.js"></script>-->
+		<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body style="background-color:#b7db8c;">
+		
+		<h1 style="color:palevioletred; font-size: 30px;" >Temperature Fahrenheit to Degree <br/>Celsius Converter using Angular JS</h1>
+		<div ng-app="" ng-init="f=32" style="color:blue;font-size: 20px;">
+		Temperature in Fahrenheit: <input type="text" ng-model="f" style="color:rgb(216, 112, 112);"><br/><br/>
+		Temperature in Degree Celsius: {{(f-32)*(5/9)}}
+		</div>
+	</body>
+</html>
